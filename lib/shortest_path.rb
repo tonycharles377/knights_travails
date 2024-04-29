@@ -1,9 +1,12 @@
 def knight_moves(statr_pos, target_pos)
 
+    # Possible night moves
     moves = [[-2, -1], [-2, 1], [-1, -2], [-1, 2], [2, 1], [2, -1], [1, 2], [1, -2]]
 
     # Nested queue consisting of pos and path
     queue = [[statr_pos, [statr_pos]]]
+    
+    # Hash to keep track of visited squares
     visited = {statr_pos => true}
 
     # 
